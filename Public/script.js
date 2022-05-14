@@ -13,9 +13,24 @@ let currentDurationn = 0;
 songsList = [
     { "songName": "Mere Wall - Karan Randhawa", "path": "playlist/s14.mp3", "coverpath": "img/cover/14.jpg" },
     { "songName": "Naah - Jass Manak", "path": "playlist/s15.mp3", "coverpath": "img/cover/15.jpg" },
+    { "songName": "Rabb Wangu - Jass Manak", "path": "playlist/s19.mp3", "coverpath": "img/cover/19.jpg" },
+    { "songName": "Tera Mera Viah - Jass Manak", "path": "playlist/s20.mp3", "coverpath": "img/cover/20.jpg" },
+    { "songName": "Tere Karke - Guri", "path": "playlist/s16.mp3", "coverpath": "img/cover/16.jpg" },
     { "songName": "Gaani - Guri", "path": "playlist/s17.mp3", "coverpath": "img/cover/17.jpg" },
     { "songName": "Door Ho Geya - Guri", "path": "playlist/s18.mp3", "coverpath": "img/cover/18.jpg" },
     { "songName": "Tainu Milke - Akhil", "path": "playlist/s21.mp3", "coverpath": "img/cover/21.jpg" },
+    { "songName": "Pyaar Karte Ho Na - Javed Mohsin", "path": "playlist/s1.mp3", "coverpath": "img/cover/1.jpg" },
+    { "songName": "Khairiyat", "path": "playlist/s3.mp3", "coverpath": "img/cover/3.jpg" },
+    { "songName": "Kabhi Tumhe", "path": "playlist/s4.mp3", "coverpath": "img/cover/4.jpg" },
+    { "songName": "Mann Bharryaa 2.0", "path": "playlist/s5.mp3", "coverpath": "img/cover/5.jpg" },
+    { "songName": "Raataan Lambiyan", "path": "playlist/s6.mp3", "coverpath": "img/cover/6.jpg" },
+    { "songName": "Ranjha", "path": "playlist/s7.mp3", "coverpath": "img/cover/7.jpg" },
+    { "songName": "She Loves You", "path": "playlist/s8.mp3", "coverpath": "img/cover/8.jpg" },
+    { "songName": "She's The One", "path": "playlist/s9.mp3", "coverpath": "img/cover/9.jpg" },
+    { "songName": "Churai Janda Eh", "path": "playlist/s10.mp3", "coverpath": "img/cover/10.jpg" },
+    { "songName": "Big Dreams", "path": "playlist/s11.mp3", "coverpath": "img/cover/11.jpg" },
+    { "songName": "Main Tan Vi Pyar Kardan", "path": "playlist/s12.mp3", "coverpath": "img/cover/12.jpg" },
+    { "songName": "Mere Beliya Ve", "path": "playlist/s13.mp3", "coverpath": "img/cover/13.jpg" },
     { "songName": "Bandook - Mohit Suthar ( Ramesh Nath )", "path": "playlist/s2.mp3", "coverpath": "img/cover/2.jpg" }
 ];
 
