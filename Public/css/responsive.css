@@ -82,7 +82,7 @@
     }
 
     #volumeValue {
-        right: 5%;
+        display: none;
     }
 
     .icoo i {
@@ -90,6 +90,6 @@
     }
 
     #repaetMusicBtn {
-        left: 30%;
+        left: 90%;
     }
 }
