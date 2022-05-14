@@ -136,17 +136,8 @@ speaker.addEventListener('click', ()=>{
     }
     else{
         volume = volumeAfterUnmute;
-        if (volume > 0 && volume < .3) {
-            speaker.classList.remove('fa-volume-off');
-            speaker.classList.add('fa-volume-down');
-        }
-        if (volume > 0.30) {
-            speaker.classList.remove('fa-volume-off');
-            speaker.classList.add('fa-volume-up');
-        }
-        audioElement.volume = volume;
-        volInp.value = volume*100;
-        showSpeaker();
+        speakerUpdate22()
+
 
         // speaker.classList.remove('fa-volume-off');
         // speaker.classList.add('fa-volume-up');
@@ -157,7 +148,7 @@ speaker.addEventListener('click', ()=>{
 volInp.addEventListener('input', ()=>{
     volume = volInp.value/100;
     audioElement.volume = volume;
-    showSpeaker();
+    speakerUpdate22();
 });
 
 playBtn.addEventListener('click', playBtnEvent);
@@ -323,4 +314,18 @@ function repaetMusic(){
         repaetMusicBtn.innerHTML = `<i class="fa-solid fa-repeat"></i>`;
         repeatAll = true;
     }
+}
+
+function speakerUpdate22(){
+    if (volume > 0 && volume < .3) {
+        speaker.classList.remove('fa-volume-off');
+        speaker.classList.add('fa-volume-down');
+    }
+    if (volume > 0.30) {
+        speaker.classList.remove('fa-volume-off');
+        speaker.classList.add('fa-volume-up');
+    }
+    audioElement.volume = volume;
+    volInp.value = volume*100;
+    showSpeaker();
 }
