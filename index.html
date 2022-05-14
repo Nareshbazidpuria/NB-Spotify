@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify by Naresh Baziduria</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="Spotify">
+            <span>NB Spotify</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>Best of My Choice</h3>
+        <div id="songList"></div>
+
+        <div class="mainCover">
+            <img id="mainCoverImage">
+            <img id="disk">
+            <img id="musicGif" src="img/music.gif">
+            <h1 id="mcSongName"></h1>
+        </div>
+
+    </div>
+
+    <div class="btPlayer">
+        <div class="icoo">
+            <i id="prevBtn" class="fa fa-step-backward" style="font-size:25px;"></i>
+            <i id="playBtn" class="fa fa-play-circle-o" style="font-size:36px;"></i>
+            <i id="nextBtn" class="fa fa-step-forward" style="font-size:25px;"></i>
+        </div>
+        <div id="durationValue"></div>
+        <input class="slider" type="range" name="seekbar" id="seekbar" min="0" max="500" value="0">
+<!-- volume speaker  -------------------------------------------------------------------------------------------- -->
+        <div id="volumeValue">
+            <ul id="speakrUl">
+                <li><i id="speaker" class="fa fa-volume-up" style="font-size:15px;"></i></li>
+                <ul id="inpUl">
+                    <li><input type="range" id="volInp" min="0" max="100"></li>
+                    <li><span id="volumePer"></span></li>
+                </ul>
+            </ul>      
+        </div>
+<!-- shuffle btn -->
+        <div id="repaetMusicBtn" onclick="repaetMusic()"><i class="fa-solid fa-repeat"></i></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6be606db13.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

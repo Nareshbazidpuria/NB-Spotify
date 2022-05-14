@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&family=Indie+Flower&family=Josefin+Sans&family=Jost&family=Orbitron:wght@500&family=Redressed&family=Roboto:wght@300&family=Satisfy&family=Source+Sans+Pro&family=Unna&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: wheat;
+}
+
+#navbar {
+    display: flex;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: .3rem 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 2.3rem;
+    padding: .25rem .5rem;
+}
+
+#logo span {
+    font-size: 1.2rem;
+    padding: 0 .2rem;
+    cursor: default;
+}
+
+
+.container {
+    position: relative;
+    background: url(../img/bg1.jpg) no-repeat 0 50%;
+    background-size: 100% 100%;
+    margin: 1rem auto;
+    width: 80vw;
+    padding: .7rem;
+    height: 68vh;
+}
+
+.container h3 {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    letter-spacing: .4rem;
+    color: white;
+}
+
+#songList {
+    position: relative;
+    width: 50%;
+    height: 57vh;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.song {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    background-color: rgba(255, 255, 255, 0.904);
+    display: flex;
+    color: black;
+    align-items: center;
+    padding: .3rem .5rem;
+    margin: .5rem;
+    border-radius: 500px;
+}
+
+.song img {
+    height: 2rem;
+    border-radius: 500px;
+}
+
+.songName {
+    font-weight: bolder;
+    margin-left: 1rem;
+    cursor: default;
+}
+
+.song i {
+    position: absolute;
+    right: 1.3rem;
+    cursor: pointer;
+}
+
+.mainCover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    height: 79%;
+    width: 47%;
+}
+
+#mainCoverImage {
+    height: 65%;
+    z-index: 6;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #ffffff40, -1px -1px 3px #ffffff40;
+}
+
+#disk {
+    box-shadow: 1px 1px 3px #ffffff40, -1px -1px 3px #ffffff40, -1px 1px 3px #ffffff40, 1px -1px 3px #ffffff40;
+    position: absolute;
+    height: 53%;
+    right: 5%;
+    top: 11%;
+    z-index: 5;
+    border-radius: 500px;
+    animation: rotate 5s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#musicGif {
+    height: 20%;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.mainCover h1 {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    color: white;
+    z-index: 10;
+    font-size: 1.3rem;
+    margin-top: -1rem;
+    font-weight: lighter;
+}
+
+.btPlayer {
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icoo i {
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.icoo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#seekbar {
+    margin-top: .7%;
+    width: 50%;
+    cursor: pointer;
+}
+
+#durationValue {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: absolute;
+    left: 25%;
+}
+
+#volumeValue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    transition: opacity .1s linear;
+    position: absolute;
+    right: 25%;
+    cursor: default;
+}
+
+#speaker {
+    cursor: pointer;
+}
+
+#volInp {
+    width: 90%;
+    margin: 7% 0;
+}
+
+#speakrUl {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#inpUl {
+    list-style: none;
+    display: none;
+    flex-direction: row-reverse;
+}
+
+#inpUl li:nth-child(2){
+    width: 20%;
+}
+
+#inpUl li {
+    width: 30%;
+}
+
+#repaetMusicBtn{
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    position: absolute;
+    left: 33.3%;
+}
