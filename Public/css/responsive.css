@@ -1,4 +1,102 @@
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
+    
+    body {
+        overflow: hidden !important;
+    }
+
+    #navbar {
+        border-bottom: 0.4px solid white;
+    }
+
+    #logo {
+        margin: auto;
+    }
+
+    .container {
+        background: black;
+        margin: 0;
+        width: 100vw;
+        height: 70vh;
+        border-bottom: 0.4px solid white;
+        box-sizing: border-box;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
+    }
+
+    #songList {
+        margin: -14px;
+        top: 41vh;
+        width: 100vw;
+        height: 23vh;
+    }
+
+    .song {
+        padding: .1rem .2rem;
+        margin: .5rem;
+    }
+
+    .songName {
+        font-weight: bold;
+        font-size: .7rem;
+        margin: 0 3rem 0 0.3rem;
+        cursor: default;
+    }
+
+    .mainCover {
+        top: 3.1rem;
+        right: 0;
+        height: 40vh;
+        border: 0px solid white;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #mainCoverImage {
+        height: 75%;
+    }
+
+    #disk {
+        height: 66%;
+        right: 5%;
+        top: 7%;
+        z-index: 5;
+    }
+
+    #musicGif {
+        margin-top: -0.5rem;
+    }
+
+    .mainCover h1 {
+        font-size: 1rem;
+        margin-top: -1.3rem;
+    }
+
+    #seekbar {
+        width: 90%;
+    }
+
+    #durationValue {
+        left: 3%;
+    }
+
+    #volumeValue {
+        display: none;
+    }
+
+    .icoo i {
+        margin: 0px 0.3rem;
+    }
+
+    #repaetMusicBtn {
+        left: 90%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
     body {
         overflow: hidden !important;
     }
