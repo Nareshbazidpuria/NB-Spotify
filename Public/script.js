@@ -17,7 +17,7 @@ songsList = [
     { "songName": "Tera Mera Viah - Jass Manak", "path": "playlist/s20.mp3", "coverpath": "img/cover/20.jpg" },
     { "songName": "Tere Karke - Guri", "path": "playlist/s16.mp3", "coverpath": "img/cover/16.jpg" },
     { "songName": "Gaani - Guri", "path": "playlist/s17.mp3", "coverpath": "img/cover/17.jpg" },
-    { "songName": "Door Ho Geya - Guri", "path": "playlist/s18.mp3", "coverpath": "img/cover/18.jpg" },
+    { "songName": "Door Ho Gaya - Guri", "path": "playlist/s18.mp3", "coverpath": "img/cover/18.jpg" },
     { "songName": "Udd Gaya", "path": "playlist/UddGaya.mp3", "coverpath": "img/cover/UddGaya.jpg" },
     { "songName": "Mere Beliya Ve", "path": "playlist/s13.mp3", "coverpath": "img/cover/13.jpg" },
     { "songName": "Mera Yaar - Lekh", "path": "playlist/LekhMeraYaar.mp3", "coverpath": "img/cover/LekhMeraYaar.jpg" },
