@@ -18,6 +18,11 @@ songsList = [
     { "songName": "Tere Karke - Guri", "path": "playlist/s16.mp3", "coverpath": "img/cover/16.jpg" },
     { "songName": "Gaani - Guri", "path": "playlist/s17.mp3", "coverpath": "img/cover/17.jpg" },
     { "songName": "Door Ho Geya - Guri", "path": "playlist/s18.mp3", "coverpath": "img/cover/18.jpg" },
+    { "songName": "Udd Gaya", "path": "playlist/UddGaya.mp3", "coverpath": "img/cover/UddGaya.jpg" },
+    { "songName": "Mere Beliya Ve", "path": "playlist/s13.mp3", "coverpath": "img/cover/13.jpg" },
+    { "songName": "Mera Yaar - Lekh", "path": "playlist/LekhMeraYaar.mp3", "coverpath": "img/cover/LekhMeraYaar.jpg" },
+    { "songName": "Bewafai Kar Gaya", "path": "playlist/BewafaiKarGaya.mp3", "coverpath": "img/cover/BewafaiKarGaya.jpg" },
+    { "songName": "Zaroori Nai", "path": "playlist/ZarooriNai.mp3", "coverpath": "img/cover/13.jpg" },
     { "songName": "Tainu Milke - Akhil", "path": "playlist/s21.mp3", "coverpath": "img/cover/21.jpg" },
     { "songName": "Pyaar Karte Ho Na - Javed Mohsin", "path": "playlist/s1.mp3", "coverpath": "img/cover/1.jpg" },
     { "songName": "Khairiyat", "path": "playlist/s3.mp3", "coverpath": "img/cover/3.jpg" },
@@ -30,7 +35,6 @@ songsList = [
     { "songName": "Churai Janda Eh", "path": "playlist/s10.mp3", "coverpath": "img/cover/10.jpg" },
     { "songName": "Big Dreams", "path": "playlist/s11.mp3", "coverpath": "img/cover/11.jpg" },
     { "songName": "Main Tan Vi Pyar Kardan", "path": "playlist/s12.mp3", "coverpath": "img/cover/12.jpg" },
-    { "songName": "Mere Beliya Ve", "path": "playlist/s13.mp3", "coverpath": "img/cover/13.jpg" },
     { "songName": "Bandook - Mohit Suthar ( Ramesh Nath )", "path": "playlist/s2.mp3", "coverpath": "img/cover/2.jpg" }
 ];
 

@@ -173,6 +173,7 @@ body {
     margin-top: .7%;
     width: 50%;
     cursor: pointer;
+    outline: none;
 }
 
 #durationValue {
