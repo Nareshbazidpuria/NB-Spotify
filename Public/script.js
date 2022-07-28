@@ -4,7 +4,7 @@ let playIcon = document.getElementsByClassName('fa-play-circle-o');
 let songIndex = 0;
 let volume = 1;
 let repeatAll = true;
-volInp.value = volume*100;
+volInp.value = volume * 100;
 volumePer.innerHTML = `${parseInt(volume * 100)}`;
 
 durationValue.innerHTML = '00:00 / 00:00';
@@ -84,7 +84,7 @@ window.addEventListener('keydown', (e) => {
             volume = 0;
         }
         audioElement.volume = volume;
-        volInp.value = volume*100;
+        volInp.value = volume * 100;
         showSpeaker();
     }
     if (e.key === 'ArrowUp') {
@@ -102,19 +102,19 @@ window.addEventListener('keydown', (e) => {
             speaker.classList.add('fa-volume-up');
         }
         audioElement.volume = volume;
-        volInp.value = volume*100;
+        volInp.value = volume * 100;
         showSpeaker();
     }
 });
 
-speaker.addEventListener('mouseover', ()=>{
+speaker.addEventListener('mouseover', () => {
     inpUl.style.display = 'flex';
-    inpUl.addEventListener('mouseleave', ()=>{
+    inpUl.addEventListener('mouseleave', () => {
         setTimeout(() => {
             inpUl.style.display = 'none';
         }, 1000);
     });
-    speaker.addEventListener('mouseleave', ()=>{
+    speaker.addEventListener('mouseleave', () => {
         setTimeout(() => {
             inpUl.style.display = 'none';
         }, 10000);
@@ -122,23 +122,23 @@ speaker.addEventListener('mouseover', ()=>{
 });
 
 let volumeAfterUnmute = volume;
-speaker.addEventListener('click', ()=>{
-    if(volume != 0){
+speaker.addEventListener('click', () => {
+    if (volume != 0) {
         volumeAfterUnmute = volume;
         volume = 0;
-        if(speaker.classList.contains('fa-volume-up')){
+        if (speaker.classList.contains('fa-volume-up')) {
             speaker.classList.remove('fa-volume-up');
             speaker.classList.add('fa-volume-off');
         }
-        if(speaker.classList.contains('fa-volume-down')){
+        if (speaker.classList.contains('fa-volume-down')) {
             speaker.classList.remove('fa-volume-down');
             speaker.classList.add('fa-volume-off');
         }
         audioElement.volume = volume;
-        volInp.value = volume*100;
+        volInp.value = volume * 100;
         showSpeaker();
     }
-    else{
+    else {
         volume = volumeAfterUnmute;
         speakerUpdate22()
 
@@ -146,11 +146,11 @@ speaker.addEventListener('click', ()=>{
         // speaker.classList.remove('fa-volume-off');
         // speaker.classList.add('fa-volume-up');
     }
-    
+
 });
 
-volInp.addEventListener('input', ()=>{
-    volume = volInp.value/100;
+volInp.addEventListener('input', () => {
+    volume = volInp.value / 100;
     audioElement.volume = volume;
     speakerUpdate22();
 });
@@ -158,12 +158,12 @@ volInp.addEventListener('input', ()=>{
 playBtn.addEventListener('click', playBtnEvent);
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
-audioElement.addEventListener('ended', ()=>{
-    if(!repeatAll){
+audioElement.addEventListener('ended', () => {
+    if (!repeatAll) {
         songIndex -= 1;
     }
     nextSong();
-} );
+});
 
 Array.from(songs).forEach((element, index) => {
     element.children[2].addEventListener('click', (e) => {
@@ -183,6 +183,11 @@ audioElement.addEventListener('timeupdate', () => {
 seekbar.addEventListener('input', seekbarUpdate);
 
 /// Functions   ///////////////////////////////////////////////////////////////////////////////////// 
+
+function onloadf() {
+    prelaoder = document.querySelector('.preloader');
+    prelaoder.style.display = 'none'
+}
 
 function playBtnEvent() {
     if (songList.children[songIndex].children[2].classList.contains('fa-play-circle-o')) {
@@ -277,23 +282,23 @@ function updateDuration() {
         totalDuration = parseInt(audioElement.duration);
         currentDurationn = parseInt(audioElement.currentTime);
 
-        let tm = parseInt(totalDuration/60);
-        let ts = totalDuration%60;
-        let cm = parseInt(currentDurationn/60);
-        let cs = currentDurationn%60;
+        let tm = parseInt(totalDuration / 60);
+        let ts = totalDuration % 60;
+        let cm = parseInt(currentDurationn / 60);
+        let cs = currentDurationn % 60;
 
-        if(cs <10 || ts < 10 ){
-            if(cs < 10){
+        if (cs < 10 || ts < 10) {
+            if (cs < 10) {
                 durationValue.innerHTML = `0${cm}:0${cs} / 0${tm}:${ts}`;
-                if(ts < 10){
+                if (ts < 10) {
                     durationValue.innerHTML = `0${cm}:0${cs} / 0${tm}:0${ts}`;
                 }
             }
-            if(ts < 10){
+            if (ts < 10) {
                 durationValue.innerHTML = `0${cm}:${cs} / 0${tm}:0${ts}`;
             }
         }
-        else{
+        else {
             durationValue.innerHTML = `0${cm}:${cs} / 0${tm}:${ts}`;
         }
     }, 1000);
@@ -309,18 +314,18 @@ function showSpeaker() {
     volumePer.innerHTML = `${parseInt(volume * 100)}`;
 }
 
-function repaetMusic(){
-    if(repeatAll){
+function repaetMusic() {
+    if (repeatAll) {
         repaetMusicBtn.innerHTML = `<span id="repttt1">1</span><i class="fa-solid fa-repeat"></i>`;
         repeatAll = false;
     }
-    else{
+    else {
         repaetMusicBtn.innerHTML = `<i class="fa-solid fa-repeat"></i>`;
         repeatAll = true;
     }
 }
 
-function speakerUpdate22(){
+function speakerUpdate22() {
     if (volume > 0 && volume < .3) {
         speaker.classList.remove('fa-volume-off');
         speaker.classList.add('fa-volume-down');
@@ -330,6 +335,6 @@ function speakerUpdate22(){
         speaker.classList.add('fa-volume-up');
     }
     audioElement.volume = volume;
-    volInp.value = volume*100;
+    volInp.value = volume * 100;
     showSpeaker();
 }
