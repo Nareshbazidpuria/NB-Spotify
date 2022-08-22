@@ -11,6 +11,15 @@ durationValue.innerHTML = '00:00 / 00:00';
 let currentDurationn = 0;
 
 songsList = [
+    { "songName": "Ghoda - Karan Randhawa", "path": "playlist/Ghoda.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Jhumke - Karan Randhawa", "path": "playlist/Jhumke.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Dooron Dooron - Karan Randhawa", "path": "playlist/Dooron Dooron.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Bunk - Karan Randhawa", "path": "playlist/Bunk.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Average - Karan Randhawa", "path": "playlist/Average.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Eyes On You - Karan Randhawa", "path": "playlist/Eyes On You.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Hisab - Karan Randhawa", "path": "playlist/Hisab.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Zulfan - Karan Randhawa", "path": "playlist/Zulfan.mp3", "coverpath": "img/cover/xyz.jpg" },
+    { "songName": "Guitar - Karan Randhawa", "path": "playlist/Guitar.mp3", "coverpath": "img/cover/xyz.jpg" },
     { "songName": "Mere Wall - Karan Randhawa", "path": "playlist/s14.mp3", "coverpath": "img/cover/14.jpg" },
     { "songName": "Naah - Jass Manak", "path": "playlist/s15.mp3", "coverpath": "img/cover/15.jpg" },
     { "songName": "Rabb Wangu - Jass Manak", "path": "playlist/s19.mp3", "coverpath": "img/cover/19.jpg" },
